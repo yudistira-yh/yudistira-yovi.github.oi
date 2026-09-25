@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Yudistira Yovi Hidayat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        utama: '#165DFF',
+                        gelap: '#1D2129',
+                        abu: '#86909C',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .scroll-smooth {
+                scroll-behavior: smooth;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gelap bg-gray-50 scroll-smooth">
+    <!-- Navigasi -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-[#165DFF] font-bold text-2xl">Portofolio</a>
+            <div class="hidden md:flex gap-8">
+                <a href="#tentang" class="hover:text-utama transition">Tentang</a>
+                <a href="#keahlian" class="hover:text-utama transition">Keahlian</a>
+                <a href="#pengalaman" class="hover:text-utama transition">Pengalaman</a>
+                <a href="#galeri" class="hover:text-utama transition">Galeri</a>
+                <a href="#kontak" class="hover:text-utama transition">Kontak</a>
+            </div>
+            <button class="md:hidden text-gelap text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Bagian Beranda -->
+    <section class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-blue-50 to-white">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="order-2 md:order-1">
+                <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-gelap mb-4">
+                    Halo, Saya <span class="text-utama">Yudistira Yovi Hidayat</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-abu mb-6">Administrasi & Operasional Logistik</h2>
+                <p class="text-gray-600 mb-8 max-w-lg">
+                    Lulusan SMK Multimedia dengan pengalaman kerja lebih dari 4 tahun di industri ekspedisi dan pergudangan. Terbiasa mengelola administrasi, memantau operasional, dan memimpin tim kerja.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#pengalaman" class="bg-utama text-white px-8 py-3 rounded-lg hover:bg-utama/90 transition shadow-lg hover:shadow-xl">
+                        Lihat Pengalaman
+                    </a>
+                    <a href="#kontak" class="border-2 border-utama text-utama px-8 py-3 rounded-lg hover:bg-utama/5 transition">
+                        Hubungi Saya
+                    </a>
+                    <!-- Tombol Unduh CV -->
+                    <a href="CV-Yudistira-Yovi.pdf" download class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition shadow-lg">
+                        <i class="fa fa-download mr-2"></i> Unduh CV
+                    </a>
+                </div>
+                <div class="flex gap-5 mt-10">
+                    <a href="mailto:by.yudistira01@gmail.com" class="text-gelap hover:text-utama text-2xl transition"><i class="fa fa-envelope"></i></a>
+                    <a href="tel:+6282175574033" class="text-gelap hover:text-utama text-2xl transition"><i class="fa fa-phone"></i></a>
+                    <a href="#" class="text-gelap hover:text-utama text-2xl transition"><i class="fa fa-map-marker"></i></a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                    <!-- Gambar Profil Baru -->
+                    <img src="https://drive.google.com/uc?export=view&id=1VPFY82EP93csYw8bmHKwonIHDnf-1zjG" alt="Foto Profil Yudistira Yovi Hidayat" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                Tentang Saya
+                <span class="block w-20 h-1 bg-utama mx-auto mt-2"></span>
+            </h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+                    Saya adalah lulusan SMK Bina Latih Karya jurusan Multimedia. Memiliki rekam jejak karir dari Operator hingga menjabat sebagai Admin Tracer di industri ekspedisi. Terbiasa mengelola administrasi, memantau operasional, dan memimpin tim kerja.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Teliti, disiplin, mampu berpikir kritis, serta menguasai penggunaan teknologi dan aplikasi perkantoran. Berasal dari Kabupaten Lampung Selatan, siap bekerja keras dan beradaptasi dengan sistem kerja perusahaan.
+                </p>
+                <div class="mt-6 text-left max-w-xl mx-auto">
+                    <p class="font-semibold">📅 Tanggal Lahir: 22 April 2003</p>
+                    <p class="font-semibold">📍 Domisili: Kabupaten Lampung Selatan, Lampung</p>
+                    <p class="font-semibold">📧 Email: by.yudistira01@gmail.com</p>
+                    <p class="font-semibold">📱 Telepon: +62 821-7557-4033</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Keahlian -->
+    <section id="keahlian" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                Keahlian Saya
+                <span class="block w-20 h-1 bg-utama mx-auto mt-2"></span>
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md p-6 text-center hover:scale-105 transition-transform hover:shadow-lg">
+                    <i class="fa fa-file-text-o text-blue-500 text-4xl mb-3"></i>
+                    <p class="font-semibold">Administrasi Dokumen</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 text-center hover:scale-105 transition-transform hover:shadow-lg">
+                    <i class="fa fa-file-word-o text-blue-600 text-4xl mb-3"></i>
+                    <p class="font-semibold">Microsoft Word</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 text-center hover:scale-105 transition-transform hover:shadow-lg">
+                    <i class="fa fa-file-excel-o text-green-600 text-4xl mb-3"></i>
+                    <p class="font-semibold">Microsoft Excel</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 text-center hover:scale-105 transition-transform hover:shadow-lg">
+                    <i class="fa fa-truck text-orange-500 text-4xl mb-3"></i>
+                    <p class="font-semibold">Logistik & Pergudangan</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 text-center hover:scale-105 transition-transform hover:shadow-lg">
+                    <i class="fa fa-users text-purple-500 text-4xl mb-3"></i>
+                    <p class="font-semibold">Kepemimpinan Tim</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 text-center hover:scale-105 transition-transform hover:shadow-lg">
+                    <i class="fa fa-cogs text-yellow-600 text-4xl mb-3"></i>
+                    <p class="font-semibold">Pemecahan Masalah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pengalaman Kerja -->
+    <section id="pengalaman" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                Pengalaman Kerja
+                <span class="block w-20 h-1 bg-utama mx-auto mt-2"></span>
+            </h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Pengalaman 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition hover:-translate-y-1">
+                    <div class="p-5">
+                        <span class="text-sm bg-blue-100 text-utama px-3 py-1 rounded">Mei 2026 - Sekarang</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">Shopee Xpress</h3>
+                        <h4 class="font-semibold text-gray-700 mb-3">Admin Tracer</h4>
+                        <ul class="text-gray-600 text-sm space-y-1 mb-4 list-disc pl-4">
+                            <li>Mengelola komunikasi resmi & sistem pengarsipan dokumen.</li>
+                            <li>Memantau pesanan tertahan & mengevaluasi kinerja operator.</li>
+                            <li>Menyelesaikan kendala operasional & konflik kerja.</li>
+                            <li>Pengecekan & perawatan peralatan kantor.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pengalaman 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition hover:-translate-y-1">
+                    <div class="p-5">
+                        <span class="text-sm bg-blue-100 text-utama px-3 py-1 rounded">Agustus 2022 - Mei 2026</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">Shopee Express</h3>
+                        <h4 class="font-semibold text-gray-700 mb-3">Operator</h4>
+                        <ul class="text-gray-600 text-sm space-y-1 mb-4 list-disc pl-4">
+                            <li>Memimpin & mengoordinasikan tim logistik harian.</li>
+                            <li>Memastikan barang aman dari penerimaan hingga pengiriman.</li>
+                            <li>Mencatat data barang masuk/keluar dengan teliti.</li>
+                            <li>Menjaga efisiensi alur kerja gudang.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pendidikan -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition hover:-translate-y-1 lg:col-span-2">
+                    <div class="p-5">
+                        <span class="text-sm bg-blue-100 text-utama px-3 py-1 rounded">April 2019 - Agustus 2022</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">SMK BINA LATIH KARYA</h3>
+                        <h4 class="font-semibold text-gray-700 mb-3">Jurusan Multimedia</h4>
+                        <ul class="text-gray-600 text-sm space-y-1 mb-4 list-disc pl-4">
+                            <li>Memahami dasar teknologi informasi, pengolahan data, & penyuntingan dokumen.</li>
+                            <li>Magang 3 bulan di studio foto, mengelola berkas & mendukung operasional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Galeri Proyek -->
+    <section id="galeri" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                Galeri Karya & Dokumen
+                <span class="block w-20 h-1 bg-utama mx-auto mt-2"></span>
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="rounded-lg overflow-hidden shadow hover:scale-105 transition-transform hover:shadow-lg">
+                    <img src="https://picsum.photos/id/20/400/300" alt="Dokumen Administrasi" class="w-full h-48 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow hover:scale-105 transition-transform hover:shadow-lg">
+                    <img src="https://picsum.photos/id/42/400/300" alt="Laporan Operasional" class="w-full h-48 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow hover:scale-105 transition-transform hover:shadow-lg">
+                    <img src="https://picsum.photos/id/60/400/300" alt="Kerja Sama Tim" class="w-full h-48 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow hover:scale-105 transition-transform hover:shadow-lg">
+                    <img src="https://picsum.photos/id/96/400/300" alt="Dokumen Magang" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                Hubungi Saya
+                <span class="block w-20 h-1 bg-utama mx-auto mt-2"></span>
+            </h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Mari Berbincang</h3>
+                    <p class="text-gray-600 mb-6">Jangan ragu untuk menghubungi saya jika ada peluang kerja atau sekadar ingin berdiskusi. Saya akan membalas pesan Anda secepat mungkin.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa fa-envelope text-utama text-xl"></i>
+                            <p>by.yudistira01@gmail.com</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa fa-phone text-utama text-xl"></i>
+                            <p>+62 821-7557-4033</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa fa-map-marker text-utama text-xl"></i>
+                            <p>Kabupaten Lampung Selatan, Lampung</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Nama Lengkap" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-utama focus:border-transparent">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Alamat Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-utama focus:border-transparent">
+                    </div>
+                    <div>
+                        <textarea rows="4" placeholder="Pesan Anda..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-utama focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-utama text-white py-3 rounded-lg hover:bg-utama/90 transition shadow-md">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kaki Halaman -->
+    <footer class="bg-gelap text-white py-8 text-center">
+        <p>&copy; 2026 Yudistira Yovi Hidayat. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
